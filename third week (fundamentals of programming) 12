@@ -1,0 +1,17 @@
+#include <iostream>
+#include <limits.h>
+using namespace std;
+int main()
+{
+	// Do Not Edit Here
+	short a = 1000;
+	int b = 10000;
+	long double c = 5.560000505012;
+
+  cout << (b/a)+(b/a) - sizeof(long long) << "\n";          // 12
+	cout << (b / a) + ( b/a ) << "\n";                        // 20
+	cout << sizeof (int)  *  sizeof (long long) << "\n";      // 32
+	cout << a * int(c) << "\n";                               // 5000
+	cout << char( sizeof (long long) *( b/a )) <<"\n" ;       // P  ==>   80
+	return 0;
+}
