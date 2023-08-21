@@ -15,3 +15,26 @@ int main()
 	cout << char( sizeof (long long) *( b/a )) <<"\n" ;       // P  ==>   80
 	return 0;
 }
+
+
+
+#include <iostream>
+#include <limits.h>
+using namespace std;
+int main()
+
+{
+	// Do Not Edit Here
+	short a = 1000;            //2
+	int b = 10000;             //4
+	long double c = 5.560000505012; //8
+
+	// Change ??? To Something Else To Get The Output
+	cout <<  b/a  - -2  << "\n"; // 12
+	cout << b/a + b/a << "\n"; // 20
+	cout << sizeof(long double) * sizeof(int) << "\n"; // 32
+	cout << a * int (c) << "\n"; // 5000
+	cout << char( b/a * sizeof (long double)) << "\n"; // P=80
+
+	return 0;
+}
